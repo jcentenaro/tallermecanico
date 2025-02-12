@@ -1,17 +1,31 @@
-const index = (req, res) => {
-    res.render("index")
+const about = (req, res) => {
+    res.render("about")
 };
-
-const services = (req, res) => {
-    res.render("services")
+const booking = (req, res) => {
+    res.render("booking")
 };
-
 const contact = (req, res) => {
     res.render("contact")
 };
+const index = (req, res) => {
+    res.render("index")
+};
+const services = (req, res) => {
+    res.render("services")
+};
+const team = (req, res) => {
+    res.render("team")
+};
+const testimonial = (req, res) => {
+    res.render("testimonial")
+};
 
 module.exports = {
+    about,
+    booking,
+    contact,
     index,
     services,
-    contact
+    team,
+    testimonial
 };
