@@ -413,13 +413,14 @@
     text-decoration: none;
     text-transform: uppercase;
     display: flex;
-    margin: 10px auto 0;
-    width: 60%;
+    /* margin: 10px auto 0; */
+    margin: 0;
+    width: 50%;
     border-radius: 25px;
     text-align: center;
     letter-spacing: 2px;
     /* background-color: rgba(255, 255, 255, 0.05); */
-    background-color: #25d366;
+    background-color: #0000FF;
     outline: none;
     padding: 10px 22px;
     /* border: 2px solid #21C4CB; */
@@ -434,6 +435,9 @@
 @media(max-width:1080px){
     .wa-horizontal-buttn a {
     font-size: 13px;
+    margin: 10px auto 0;
+    width: 90%;
+
 	}
 }
 
