@@ -17,7 +17,11 @@ const team = (req, res) => {
     res.render("team")
 };
 const testimonial = (req, res) => {
-    res.render("testimonial")
+    res.render("testimonial", {
+        title: "Título de Testimonial"});
+};
+const success = (req, res) => {
+    res.render("success")
 };
 
 module.exports = {
@@ -27,5 +31,6 @@ module.exports = {
     index,
     services,
     team,
-    testimonial
+    testimonial,
+    success
 };
