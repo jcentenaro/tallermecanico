@@ -2,7 +2,6 @@ const express = require("express");
 const app = express();
 const expressLayouts = require("express-ejs-layouts");
 const bodyParser = require("body-parser");
-app.use(require("./src/routes/mainRoutes"));
 const contactRoutes = require("./src/routes/mainRoutes");
 
 const path = require("path");
@@ -37,7 +36,9 @@ app.use((req, res, next) => {
     // res.status(404).send("La página que está buscando no existe");
     res.status(404).render("404", { 
         layout: "layouts/layout", 
-        titulo: "Error 404", 
+        titulo: "Error 404",
+        currentRoute: "/testimonial",
+        title: "Página no encontrada",
         ciudad: "CABA", 
         zona: "Error 404" });
 });

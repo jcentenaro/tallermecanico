@@ -47,12 +47,12 @@ router.post("/enviar", async (req, res) => {
         
         // Renderizar la vista de éxito
         res.status(200).render("success", {
-            titulo: "Peluquería Canina a Domicilio en Mensaje Enviado- Cortes y Baños Caninos",
+            titulo: "Taller Mecánico Ariel - Especialistas en cambios de distribución",
             title: "Mensaje Enviado",
             mensaje: "mensaje deMansaje Enviado",
             message: "Mensaje Enviado",
             ciudad: "Ciudad de Mensaje Enviado", 
-            tituloabout: "Peluquería Canina a Domicilio en Mensaje Enviado", 
+            tituloabout: "Taller Mecánico Ariel - Especialistas en cambios de distribución", 
             zona: "Zona de Mensaje Enviado", 
             urlgooglemaps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9288.494002341027!2d-58.49484950528578!3d-34.60470395826524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9df44319d89%3A0x72e02046997c8cef!2sVilla%20del%20Parque%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1732211318217!5m2!1ses!2sar"
         });

@@ -1,22 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- contentFor('title') %> <%= titulo %> <%- contentFor('body') %>
 
-<!--Head-->
-<%- include("partials/head") %>
-<!--/Head-->
-
-<body>
+<%# contentFor('styles') %>
+<%# contentFor('body') %>
+<main>
     <!-- Spinner Start -->
     <%- include("partials/spinner") %>
     <!-- Spinner End -->
-
-    <!--Topbar-->
-    <%- include("partials/topbar") %>
-	<!--/Topbar-->
-
-    <!-- Navbar Start -->
-    <%- include("partials/navbar") %>
-    <!-- Navbar End -->
 
     <!-- Page About Banner Start -->
     <%- include("partials/aboutbanner") %>
@@ -38,16 +27,10 @@
     <%- include("partials/team") %>
     <!-- Team End -->
         
-    <!-- Footer Start -->
-    <%- include("partials/footer") %>
-    <!-- Footer End -->
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
     <!-- JavaScript Libraries -->
     <%- include("partials/libraries") %>
     <!-- END Javascript Libraries -->
-</body>
-
-</html>
+</main>

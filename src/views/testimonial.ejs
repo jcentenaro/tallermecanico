@@ -1,13 +1,13 @@
-<%- include('title') %> <%= titulo %> <%- include('body') %>
+<%- contentFor('title') %> <%= titulo %> <%- contentFor('body') %>
 
-<%# include('styles') %>
-<%# include('body') %>
+<%# contentFor('styles') %>
+<%# contentFor('body') %>
 <main>
 
 	<!-- testimonials -->
-	<%- include("partials/testimonials") %>
+	<%- include("partials/testimonios") %>
 	<!-- testimonials -->
 
 </main>
 
-<%# include('scripts') %>
+<%- contentFor('scripts') %>
