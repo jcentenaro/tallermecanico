@@ -3,6 +3,7 @@ const app = express();
 const path = require("path");
 const expressLayouts = require("express-ejs-layouts");
 const bodyParser = require("body-parser");
+const mainRoutes = require(path.join(__dirname, "/src/routes/mainRoutes"));
 const contactRoutes = require("./src/routes/mainRoutes");
 
 const methodOverride = require("method-override");
@@ -11,8 +12,7 @@ const methodOverride = require("method-override");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 // Usar las rutas de contacto
-app.use("/contacto", contactRoutes);
-
+app.use("/contacto", mainRoutes);
 // habilito vista carpetat public
 app.use(express.static(path.join(__dirname, "/public")));
 // configuración del motor de vistas
@@ -27,7 +27,7 @@ app.use(methodOverride("_method"));
 
 app.use(express.urlencoded({extended: false}));
 
-const mainRoutes = require(path.join(__dirname, "/src/routes/mainRoutes"));
+
 app.use(mainRoutes);
 
 // Manejo de error de página no existente. 
