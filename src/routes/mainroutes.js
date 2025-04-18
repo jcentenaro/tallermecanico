@@ -27,7 +27,7 @@ router.post("/enviar", async (req, res) => {
     // Configurar los detalles del correo
     const mailOptions = {
         from: `"${Name} ${LastName}" <${Email}>`, // Quién envía
-        to: "smokiepeluqueria@gmail.com", // Destinatario real
+        to: "testeoformularios+taller@gmail.com", // Destinatario real
         bcc: "juancentenaro@gmail.com", // Copia oculta
         subject: "Mensaje Site Peluquería para Perros", // Asunto
         text: `Nombre: ${Name}\nEmail: ${Email}\nTeléfono: ${phone}\nAsunto:\n${Subject}\nMensaje:\n${Message}`,
