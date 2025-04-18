@@ -1,10 +1,9 @@
 const express = require("express");
 const app = express();
+const path = require("path");
 const expressLayouts = require("express-ejs-layouts");
 const bodyParser = require("body-parser");
 const contactRoutes = require("./src/routes/mainRoutes");
-
-const path = require("path");
 
 const methodOverride = require("method-override");
 
@@ -28,7 +27,7 @@ app.use(methodOverride("_method"));
 
 app.use(express.urlencoded({extended: false}));
 
-const mainRoutes = require("./src/routes/mainRoutes");
+const mainRoutes = require(path.join(__dirname, "/src/routes/mainRoutes"));
 app.use(mainRoutes);
 
 // Manejo de error de página no existente. 
