@@ -4,7 +4,7 @@ const about = (req, res) => {
         layout: "layouts/layout",
         title: "Quienes somos",
         titulo: "Quien sos"
-});
+    });
 };
 const booking = (req, res) => {
     res.render("booking", {
@@ -12,7 +12,7 @@ const booking = (req, res) => {
         layout: "layouts/layout",
         titulo: "Formulario de contacto",
         title: "Formulario de contacto"
-});
+    });
 };
 const contact = (req, res) => {
     res.render("contact", {
@@ -20,24 +20,24 @@ const contact = (req, res) => {
         layout: "layouts/layout",
         titulo: "Formulario de contacto",
         title: "Taller Mecánico Ariel - Especialistas en cambios de distribución"
-});
+    });
 };
 const index = (req, res) => {
     res.render("index", {
-        currentRoute: "/", 
+        currentRoute: "/",
         titulo: "Taller Mecánico Ariel - Especialistas en cambios de distribución",
-        title: "Taller Mecánico Ariel - Especialistas en cambios de distribución", 
+        title: "Taller Mecánico Ariel - Especialistas en cambios de distribución",
         ciudad: "Parque Chas",
         canonical: "https://www.tallermecanicoariel.com.ar"
-});
+    });
 };
 const services = (req, res) => {
     res.render("services", {
         currentRoute: "/services",
-        titulo: "Taller Mecánico Ariel - Especialistas en cambios de distribución", 
+        titulo: "Taller Mecánico Ariel - Especialistas en cambios de distribución",
         ciudad: "Parque Chas",
         canonical: "https://www.tallermecanicoariel.com.ar"
-});
+    });
 };
 const team = (req, res) => {
     res.render("team", {
@@ -45,7 +45,7 @@ const team = (req, res) => {
         layout: "layouts/layout",
         title: "Título de Equipo",
         titulo: "Título de Equipo"
-});
+    });
 };
 const testimonial = (req, res) => {
     res.render("testimonial", {
@@ -53,7 +53,7 @@ const testimonial = (req, res) => {
         layout: "layouts/layout",
         titulo: "Título de Testimonial",
         title: "Taller Mecánico Ariel - Especialistas en cambios de distribución"
-});
+    });
 };
 const success = (req, res) => {
     res.render("success", {
@@ -61,7 +61,7 @@ const success = (req, res) => {
         layout: "layouts/layout",
         titulo: "Título de Testimonial",
         title: "Título de Testimonial"
-});
+    });
 };
 
 module.exports = {

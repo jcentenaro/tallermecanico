@@ -19,14 +19,14 @@ app.use("/contacto", mainRoutes); // Si mainRoutes incluye rutas para /contacto
 app.use(mainRoutes); // Rutas principales
 
 app.use((req, res) => {
-  res.status(404).render("404", {
-    layout: "layouts/layout",
-    titulo: "Error 404",
-    currentRoute: "/testimonial",
-    title: "Página no encontrada",
-    ciudad: "CABA",
-    zona: "Error 404",
-  });
+    res.status(404).render("404", {
+        layout: "layouts/layout",
+        titulo: "Error 404",
+        currentRoute: "/testimonial",
+        title: "Página no encontrada",
+        ciudad: "CABA",
+        zona: "Error 404",
+    });
 });
 
 const PORT = process.env.PORT || 3000;

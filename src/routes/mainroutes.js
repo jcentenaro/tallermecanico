@@ -45,7 +45,7 @@ router.post("/enviar", async (req, res) => {
     try {
         // Enviar el correo
         await transporter.sendMail(mailOptions);
-        
+
         // Renderizar la vista de éxito
         res.status(200).render("success", {
             currentRoute: "/success",
@@ -53,19 +53,19 @@ router.post("/enviar", async (req, res) => {
             title: "Mensaje Enviado",
             mensaje: "mensaje deMansaje Enviado",
             message: "Mensaje Enviado",
-            ciudad: "Ciudad de Mensaje Enviado", 
-            tituloabout: "Taller Mecánico Ariel - Especialistas en cambios de distribución", 
+            ciudad: "Ciudad de Mensaje Enviado",
+            tituloabout: "Taller Mecánico Ariel - Especialistas en cambios de distribución",
             zona: "Zona de Mensaje Enviado"
         });
     } catch (error) {
         console.error("Error al enviar el correo:", error);
-        
+
         // Renderizar una vista de error
         res.status(500).render("error", {
             title: "Error al enviar",
             message: "Hubo un problema al enviar tu mensaje. Intenta nuevamente más tarde.",
             titulo: "Titulo",
-            
+
         });
     }
 });
