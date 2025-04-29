@@ -35,7 +35,7 @@ router.post("/enviar", async (req, res) => {
         from: `"${Name} ${LastName}" <${Email}>`,
         to: "testeoformularios+taller@gmail.com",
         bcc: "juancentenaro@gmail.com",
-        subject: "Mensaje Site Peluquería para Perros",
+        subject: "Mensaje para Taller Mecánico Ariel",
         text: `Nombre: ${Name}\nEmail: ${Email}\nTeléfono: ${phone}\nAsunto:\n${Subject}\nMensaje:\n${Message}`,
         html: `
             <p><strong>Nombre:</strong> ${Name} ${LastName}</p>
